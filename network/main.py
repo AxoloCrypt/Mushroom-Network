@@ -34,4 +34,5 @@ test_df_y = test_df_x.pop('class')
 
 test_x = np.column_stack((test_df_x, test_df_y))
 
+print("#### EVALUATION ####")
 model.evaluate(test_x, test_df['class'].values)
